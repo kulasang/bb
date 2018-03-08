@@ -21,7 +21,7 @@ class Talk:
   port = 443;
 
   UA = "Line/8.3.0"
-  LA = "IOSIPAD\x097.14.0\x09iPhone_OS\x0910.12.0"
+  LA = "IOSIPAD\t7.18.0\tiPhone OS\t11.12.1"
 
   authToken = None
   cert = None
