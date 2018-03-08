@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 cl = LINETCR.LINE()
 #cl.login(qr=True)
-cl.login(token='Eq8bbPCLkqMfWSwM7cw7.JCxLmhfn3/VLfwqc5bVyPW.NFLNqn+NsULH1NGDuR+VhHI8lKqAoetPSbuEQSlT1JQ=')
+cl.login(token='EqQ8mmhluOKx1odEQyn7.JCxLmhfn3/VLfwqc5bVyPW.4GWUy4IbcIImZvLia+GK9ymbBn21507q6oyJjJ7NLhU=')
 cl.loginResult()
 print "Cl-Login Success\n"
 
