@@ -41,10 +41,10 @@ class LINE:
       raise Exception("invalid arguments")
 
     self.authToken = self.Talk.authToken
-    self._headers = {'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0', 'X-Line-Access': self.authToken, 'User-Agent': 'Line/8.3.0'}
+    self._headers = {'X-Line-Application': 'CHROMEOS\t7.18.0\tChrome_OS\t1', 'X-Line-Access': self.authToken, 'User-Agent': 'Line/8.3.0'}
     self.cert = self.Talk.cert
     self._headers = {
-              'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0', 
+              'X-Line-Application': 'CHROMEOS\t7.18.0\tChrome_OS\t1', 
               'X-Line-Access': self.authToken, 
               'User-Agent': 'Line/8.3.0'
    }
