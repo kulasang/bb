@@ -86,10 +86,10 @@ class LineAPI {
   _qrCodeLogin() {
     this.setTHttpClient();
     return new Promise((resolve, reject) => {
-    this._client.getAuthQrcode(true, 'SELF BOT By LINEVIT',(err, result) => {
+    this._client.getAuthQrcode(true, 'SELF BOT ED',(err, result) => {
       const qrcodeUrl = `line://au/q/${result.verifier}`;
       qrcode.generate(qrcodeUrl,{small: true});
-      console.info(`[SELF BOT]\n\n[By. Kulasang]\n\n: ${qrcodeUrl}`)
+      console.info(`[SELF BOT]\n\n[By. ED]\n\n: ${qrcodeUrl}`)
       Object.assign(this.config.Headers,{ 'X-Line-Access': result.verifier });
         unirest.get('https://gd2.line.naver.jp/Q')
           .headers(this.config.Headers)
@@ -148,7 +148,7 @@ class LineAPI {
                          this.setTHttpClient(this.options);
              this._authConn();
              this._client.pinCode = success.pinCode;
-                     console.info("\n\n=============================\nEnter This Pincode => "+success.pinCode+"\nto your mobile phone in 2 minutes\n=============================");
+                     console.info("\n\n=============================\nกรุณาเข้าสู่ระบบอุปกรณ์ => "+success.pinCode+"\nภายใน 2 นาที\n=============================");
                      this._checkLoginResultType(success.type, success);
              reqxy.type = 1;
                        this._loginWithVerifier((verifierResult) => {
